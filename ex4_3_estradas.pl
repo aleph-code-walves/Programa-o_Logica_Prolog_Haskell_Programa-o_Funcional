@@ -1,8 +1,3 @@
-% ============================================================
-% EXERCICIO 4.3 - Grafo de Estradas
-% Predicado: estrada(Origem, Destino, Km)
-% ============================================================
-
 estrada(a, b, 25).
 estrada(a, c, 19).
 estrada(a, d, 23).
@@ -20,8 +15,7 @@ dist(A, B, D) :- estrada(A, C, D1),
                  dist(C, B, D2),
                  D is D1 + D2.
 
-% ============================================================
-% CONSULTAS (executar no painel direito do SWISH):
+
 %
 % ?- dist(a, e, D).
 % ?- dist(a, b, D).
