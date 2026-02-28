@@ -1,8 +1,3 @@
-% ============================================================
-% EXERCICIO 2.4 - Base de Pessoas
-% Predicado: pessoa(Nome, Sexo, Idade, Altura, Peso)
-% ============================================================
-
 pessoa(ana, fem,  23, 1.55, 56.0).
 pessoa(bia, fem,  19, 1.71, 61.3).
 pessoa(ivo, masc, 22, 1.80, 70.5).
@@ -15,8 +10,8 @@ casal(H, M) :- pessoa(H, masc, _, AH, _),
                pessoa(M, fem,  _, AM, _),
                AH > AM.
 
-% ============================================================
-% CONSULTAS (executar no painel direito do SWISH):
+
+% CONSULTAS:
 %
 % a) ?- pessoa(N, fem, I, _, _), I > 20.
 % b) ?- pessoa(N, _, _, A, P), A >= 1.70, P < 65.
